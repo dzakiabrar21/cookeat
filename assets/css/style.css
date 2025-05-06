@@ -1,0 +1,500 @@
+@layer bawah, atas;
+
+@layer bawah{
+    .bawah{
+        z-index: 0;
+    }
+}
+
+@layer atas{
+    .atas{
+        z-index: 1000;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FEFBE7;
+    color: #926949;
+    /* color: #744928; */
+    line-height: 1.6;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+#search .find {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    padding: 10px;
+    background-color: #F9EBC8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search .find a:hover {
+    color: #A0BCC2;
+}
+
+#search .find .account .cart {
+    display: flex;
+    align-items: center;
+}
+
+#search .find .account .cart .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#search .find .account .cart .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .search_section.show {
+    transition: all 1s ease;
+    opacity: 1 !important;
+    left: 12.6em;
+    display: block;
+} */
+
+#search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DAE5D0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: #F9EBC8;
+    color: #926949;
+    transition: border-color 0.3s ease;
+}
+
+#search input[type="text"]:focus {
+    border-color: #A0BCC2;
+    outline: none;
+}
+
+#search .desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#search .desc h4 {
+    font-weight: 500;
+    color: #926949;
+}
+
+#search .desc p a {
+    color: #A0BCC2;
+    text-decoration: none;
+}
+
+#search .desc p a:hover {
+    color: #286e9c;
+}
+
+#search .find a {
+    display: block;
+    padding: 8px 0;
+    color: #926949;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#search .find a:hover {
+    color: #A0BCC2;
+}
+
+#search .find .desc a {
+    color: #A0BCC2;
+}
+
+
+/* Profile Image */
+.user-profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #744928; /* Border color to match the text */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Layout Utama */
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.profile-card {
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f7ebd5ad;
+    /* background-color:#926949; */
+}
+
+.profile-card desc,.profile-header {
+    margin: 10px;
+}
+
+/* Sidebar Kiri */
+.sidebar-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #F9EBC8;
+    border-right: 1px solid #DAE5D0;
+}
+
+.sidebar-left .logo {
+    align-items: center;
+    color: #A0BCC2;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.sidebar-left .logo div {
+    padding: 10px;
+    border-radius: 9px;
+    align-items: center;
+}
+
+.sidebar-left nav {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.sidebar-left nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.sidebar-left nav a:hover {
+    color: #A0BCC2;
+}
+
+.sidebar-left nav a i {
+    font-size: 1.2rem;
+}
+
+/* Sidebar Kanan */
+.sidebar-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+    background-color: #f8f1ba;
+}
+
+.sidebar-right h3 {
+    color: #0d78c0;
+    margin-bottom: 15px;
+}
+
+.suggested-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.suggested-user span {
+    font-weight: 500;
+}
+
+.follow-btn {
+    color: #A0BCC2;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.follow-btn:hover {
+    color: #DAE5D0;
+}
+
+/* Feed Postingan */
+.container {
+    width: 750px;
+    padding: 20px;
+}
+/* .container * {
+    width: 600px;
+} */
+
+.feed {
+    /* background-color: ; */
+    width: 100%;
+}
+
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DAE5D0;
+    padding-bottom: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header h3 {
+    font-size: 1rem;
+    color: #0d78c0;
+}
+
+.post-time {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.post img, .post video {
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.post-actions span {
+    margin-top: auto;
+    cursor: pointer;
+    color: #286e9c;
+    transition: color 0.3s ease;
+}
+
+.post-actions span:hover {
+    color: #DAE5D0;
+}
+
+.post-actions button {
+    padding:8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #A0BCC2;
+    transition: color 0.3s ease;
+}
+
+.post-actions button:hover {
+    color: #DAE5D0;
+}
+
+.post-content p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.post-content p strong {
+    /* color: #A0BCC2; */
+    /* color: #0d78c0; */
+    color: #926949;
+}
+
+.view-comments {
+    color: #666;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.view-comments:hover {
+    color: #A0BCC2;
+}
+
+.add-comment input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #DAE5D0;
+    border-radius: 20px;
+    background-color: #F9EBC8;
+    font-size: 0.9rem;
+}
+
+/* Post Detail Page */
+.comment-list {
+    margin-bottom: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.comment p {
+    color: #011627 ;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: baseline;
+}
+
+.comment p strong {
+    color: #744928;
+}
+
+.warning{
+    color: red;
+}
+
+.comment-meta {
+    color: #666;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 8px;
+}
+
+.reply-link, .view-replies {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.reply-link:hover, .view-replies:hover {
+    color: #A0BCC2;
+}
+
+.reply {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.reply p {
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: baseline;
+}
+
+.reply-form {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.reply-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #DAE5D0;
+    border-radius: 20px;
+    background-color: #F9EBC8;
+    font-size: 0.9rem;
+}
+
+/* Form (Login, Register, Create Post, dll.) */
+.card {
+    background-color: #F9EBC8;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button, input[type="submit"] {
+    background-color: #A0BCC2;
+    color: #FEFBE7;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #DAE5D0;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #DAE5D0;
+    border-radius: 5px;
+    background-color: #FEFBE7;
+    font-size: 0.9rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Footer */
+footer {
+    background-color: #A0BCC2;
+    color: #FEFBE7;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+h2, h3, h1 {
+    color: #0d78c0;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+ a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.search_section {
+    z-index: 1000;
+    background-color: #FEFBE7;
+    border-radius: 8px;
+    border: 0.5px solid rgb(201, 201, 201);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.267);
+    position: absolute;
+    top: 60px; /* Adjust based on where you want it to appear */
+    left: 12.6em; /* Match sidebar width or modify accordingly */
+    width: 300px;
+}
